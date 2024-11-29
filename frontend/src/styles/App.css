@@ -1,0 +1,25 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1050;
+}
+
+.modal-dialog {
+    margin: 100px auto;
+}
+
+.img-custom {
+    width: 230px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-custom {
+    max-width: 250px;
+    margin: 10px auto; /* Center the card in its column */
+    padding: 10px;
+}

@@ -1,8 +1,10 @@
+import { SiteRoute } from "./components/SiteRoute";
+
 
 function App() {
     return (
         <div>
-            <h1> Hello React-Typescript template</h1>
+            <SiteRoute/>
         </div>
     );
 }

@@ -1,0 +1,244 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 30px;
+  color: #333;
+}
+
+#name {
+  text-align: right;
+  font-size: 1.2rem;
+  color: #555;
+  margin-right: 20px;
+}
+
+#actionbtn {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#actionbtn button {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 2px solid #007bff;
+  transition: all 0.3s ease;
+}
+
+#actionbtn button:hover {
+  background-color: #007bff;
+  color: white;
+  border-color: #0056b3;
+}
+
+.vecation-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.vecation-cards .card {
+  width: 18rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vecation-cards .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-bottom: 2px solid #f1f1f1;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.card-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.heart-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.heart-icon.filled {
+  color: #ff4f5a;
+}
+
+.heart-icon.empty {
+  color: #888;
+}
+
+#btns {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+#btns button {
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+#btns button:hover {
+  transform: scale(1.05);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination .page-item {
+  margin: 0 5px;
+}
+
+.pagination .page-link {
+  border-radius: 50%;
+  padding: 8px 16px;
+  font-size: 1.1rem;
+  color: #007bff;
+  transition: all 0.3s ease;
+}
+
+.pagination .page-link:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.1);
+}
+
+.pagination .active .page-link {
+  background-color: #007bff;
+  color: white;
+}
+
+.toast-container {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1050;
+}
+
+.toast-body {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-header {
+  background-color: #007bff;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.modal-footer {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.modal-footer button {
+  font-size: 1.1rem;
+  padding: 8px 20px;
+}
+
+.form-control {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+input[type="file"] {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+@media (max-width: 768px) {
+  .vecation-cards {
+    justify-content: center;
+  }
+
+  .vecation-cards .card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  #actionbtn {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .toast-container {
+    top: 10px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+
+  #name {
+    font-size: 1rem;
+  }
+
+  #actionbtn button {
+    width: 100%;
+  }
+}
